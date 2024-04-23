@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7E1AC"
+    tools:context=".IdentifyActivity">
+
+    <!-- Edit text to enter your input -->
+    <EditText
+        android:id="@+id/idEdtLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Identify your language here"
+        android:padding="4dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <!-- Button to detect language of the input text -->
+    <Button
+        android:id="@+id/idBtnDetectLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtLanguage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#7CB342"
+        android:text="Detect language" />
+
+    <!-- Text view to display the code of entered text -->
+    <TextView
+        android:id="@+id/idTVDetectedLanguageCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnDetectLanguage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:text="Language code"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!-- Text view to display the name of the detected language -->
+    <TextView
+        android:id="@+id/idTVDetectedLanguageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDetectedLanguageCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:text="Language name"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</RelativeLayout>
